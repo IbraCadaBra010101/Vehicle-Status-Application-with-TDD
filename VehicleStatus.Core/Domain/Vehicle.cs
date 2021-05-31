@@ -12,6 +12,5 @@ namespace VehicleStatus.Core.Domain
         Guid VehicleId { get; set; }
         string Name { get; set; }
         string RegistrationNumber { get; set; }
-        TransportationCompany Company { get; set; }
     }
 }

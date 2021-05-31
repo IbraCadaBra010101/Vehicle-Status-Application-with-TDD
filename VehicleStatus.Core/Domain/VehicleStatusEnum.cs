@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace VehicleStatus.Core.Domain
 {
-    public class Address
+    public enum VehicleStatusEnum
     {
-        int Id { get; set; }
-        string StreetName { get; set; }
-        string ZipCode { get; set; }
-        string City { get; set; }
+        Connected, Disconnected
     }
 }
