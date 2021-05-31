@@ -1,12 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using VehicleStatus.Core.Domain;
 
 namespace VehicleStatus.Core.VehicleStatusProcessor
 {
     public interface IVehicleStatusProcessor
     {
-        TransportationCompany GetCompanyOverview();
-        IEnumerable<Vehicle> GetVehiclesConnectionStatus(VehicleStatusEnum currentStatus);
-        IEnumerable<Vehicle> GetCustomerVehicles(int CompanyId); 
-    }
+        Task<TransportationCompanyRequest> AddTransportationCompany(TransportationCompanyRequest transportationCompany); 
+        Task<TransportationCompanyRequest> AddVehicleToCompany(int companyId, Vehicle vehicle);   
+        Task<IEnumerable<Vehicle>> GetVehiclesByConnectionStatus(VehicleStatusEnum currentStatus);
+        Task<IEnumerable<Vehicle>> GetCustomerVehicles(int CompanyId);
+    } 
 } 
