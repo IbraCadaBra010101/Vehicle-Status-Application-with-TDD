@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace VehicleStatus.Core.Domain.Vehicles
 {
-   public class VehicleBase
+    public class VehicleBase
     {
-
         Guid VehicleId { get; set; }
         string Name { get; set; }
         string RegistrationNumber { get; set; }

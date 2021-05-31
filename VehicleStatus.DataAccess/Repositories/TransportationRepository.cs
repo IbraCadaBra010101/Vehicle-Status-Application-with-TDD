@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VehicleStatus.Core.Domain.Vehicles
+namespace VehicleStatus.DataAccess.Repositories
 {
-   public class VehicleRequest : VehicleBase
+   public class TransportationRepository
     {
-        string CompmanyId { get; set; }
+
     }
 }

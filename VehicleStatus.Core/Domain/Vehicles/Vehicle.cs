@@ -9,5 +9,6 @@ namespace VehicleStatus.Core.Domain
     public class Vehicle
     {
         int Id { get; set; }
-    }
-}
+        public enum ConnectionStatus { Connected, Offline } 
+    } 
+} 

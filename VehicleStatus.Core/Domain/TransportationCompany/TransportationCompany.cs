@@ -9,6 +9,5 @@ namespace VehicleStatus.Core.Domain
     public class TransportationCompany : TransportationCompanyBase
     {
         public int Id { get; set; } 
-        ICollection<Vehicle> Vehicles { get; set; }
     }
 }
